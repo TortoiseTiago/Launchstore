@@ -6,7 +6,7 @@ Loja virtual desenvolvida durante as aulas do Launchbase com intuito de cadastra
 
 ### Create container
 
-docker container run --name pgdb -p 5432:5432 -e POSTGRES_PASSWORD=112233 -d postgres:11
+```sh docker container run --name pgdb -p 5432:5432 -e POSTGRES_PASSWORD=112233 -d postgres:11 ```
 
 ### Comandos
 

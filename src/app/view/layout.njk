@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+
+    {% block head %}
+      <title>Inicio - LaunchStore</title>
+    {% endblock head %}
+
+  </head>
+
+  <body>
+
+    {%include "parts/header.njk"%}
+
+    {% block content %}{% endblock content %}
+
+    {%include "parts/footer.njk"%}
+
+  </body>
+
+</html>

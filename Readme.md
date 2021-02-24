@@ -43,6 +43,6 @@ docker container pgdb rm - para remover o container
 
 - [x] Modelando dados do Bando de dados
 - [x] Criando o Layout basico da aplicação
-- [] Layout do formulario de cadastro
-- [] Cadastrando produtos
-- [] Atualizando e excluindo produtos
+- [ ] Layout do formulario de cadastro
+- [ ] Cadastrando produtos
+- [ ] Atualizando e excluindo produtos

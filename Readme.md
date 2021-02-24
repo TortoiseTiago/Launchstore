@@ -46,10 +46,23 @@ Loja virtual desenvolvida durante as aulas do Launchbase com intuito de cadastra
 
 ## TODO
 
-### Primeiro módulo
+### Primeiro módulo - Launchstore
 
 - [x] Modelando dados do Bando de dados
 - [x] Criando o Layout basico da aplicação
 - [ ] Layout do formulario de cadastro
 - [ ] Cadastrando produtos
 - [ ] Atualizando e excluindo produtos
+
+### Segundo módulo - Upload de Imagens
+
+- [ ] Gerenciador de imagens no Front end
+- [ ] Salvando, atualizando e excluindo imagens
+- [ ] Pagina de compra
+- [ ] Galeria de Imagens
+
+
+### Terceiro módulo - Listando os produtos da loja
+
+- [ ] Home Page
+- [ ] Pagina de Busca

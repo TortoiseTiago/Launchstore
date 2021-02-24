@@ -10,14 +10,21 @@ Loja virtual desenvolvida durante as aulas do Launchbase com intuito de cadastra
 
 ### Comandos
 
-- docker container ls -a - para verificar quais containers estão instalados
-- docker container pgdb start - para inicialização
-- docker container pgdb stop - para desligar
-- docker container pgdb rm - para remover o container
+- para verificar quais containers estão instalados
+```sh docker container ls -a ```
+
+- para inicializar o container 
+```sh docker container pgdb start```
+
+- para desligar o container
+```sh docker container pgdb stop``` 
+
+- para remover o container
+```sh docker container pgdb rm ```
 
 ## Diagramação
 
-- [Diagram.io](https://dbdiagram.io/)
+- [Diagram.io](https://dbdiagram.io/d/5ea7103939d18f5553fe4cfe)
 
 ## SQL
 

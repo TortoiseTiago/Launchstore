@@ -10,10 +10,10 @@ docker container run --name pgdb -p 5432:5432 -e POSTGRES_PASSWORD=112233 -d pos
 
 ### Comandos
 
-docker container ls -a - para verificar quais containers estão instalados
-docker container pgdb start - para inicialização
-docker container pgdb stop - para desligar
-docker container pgdb rm - para remover o container
+- docker container ls -a - para verificar quais containers estão instalados
+- docker container pgdb start - para inicialização
+- docker container pgdb stop - para desligar
+- docker container pgdb rm - para remover o container
 
 ## Diagramação
 

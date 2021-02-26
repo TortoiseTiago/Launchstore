@@ -70,6 +70,11 @@ footer {
 
   text-align: center;
 }
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 header div.container {
   display: grid;
   grid-template-columns: 220px auto 280px;

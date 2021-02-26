@@ -5,6 +5,8 @@
       {% for category in categories %}
         <option value="{{category_id}}" {% if product.category_id == category_id %} selected="selected" {% endif %}>
           {{category.name}}
+          id
+          {{category.id}}
         </option>
       {% endfor %}
     </select>
@@ -12,8 +14,10 @@
 </div>
 
 <div class="item">
-  <div>Nome do Anúncio</div>
-  <div><input type="text" name="name" placeholder="Nome do produto" value="{{products.name}}"></div>
+  <div>Titulo</div>
+  <div>
+    <input type="text" name="name" placeholder="Nome do produto" value="{{products.name}}">
+  </div>
 </div>
 
 <div class="item">

@@ -6,21 +6,21 @@ Loja virtual desenvolvida durante as aulas do Launchbase com intuito de cadastra
 
 ### Create container
 
-```sh docker container run --name pgdb -p 5432:5432 -e POSTGRES_PASSWORD=112233 -d postgres:11 ```
+`sh docker container run --name pgdb -p 5432:5432 -e POSTGRES_PASSWORD=112233 -d postgres:11 `
 
 ### Comandos
 
 - para verificar quais containers estão instalados
-```sh docker container ls -a ```
+  `sh docker container ls -a `
 
-- para inicializar o container 
-```sh docker container pgdb start```
+- para inicializar o container
+  `sh docker container pgdb start`
 
 - para desligar o container
-```sh docker container pgdb stop``` 
+  `sh docker container pgdb stop`
 
 - para remover o container
-```sh docker container pgdb rm ```
+  `sh docker container pgdb rm `
 
 ## Diagramação
 
@@ -50,7 +50,7 @@ Loja virtual desenvolvida durante as aulas do Launchbase com intuito de cadastra
 
 - [x] Modelando dados do Bando de dados
 - [x] Criando o Layout basico da aplicação
-- [ ] Layout do formulario de cadastro
+- [x] Layout do formulario de cadastro
 - [ ] Cadastrando produtos
 - [ ] Atualizando e excluindo produtos
 
@@ -60,7 +60,6 @@ Loja virtual desenvolvida durante as aulas do Launchbase com intuito de cadastra
 - [ ] Salvando, atualizando e excluindo imagens
 - [ ] Pagina de compra
 - [ ] Galeria de Imagens
-
 
 ### Terceiro módulo - Listando os produtos da loja
 

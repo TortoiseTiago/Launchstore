@@ -15,6 +15,8 @@ module.exports = {
     ) VALUES ( $1, $2, $3, $4, $5, $6, $7, $8 )
     RETURNING id`;
 
+    data.price = data.price.replace(/\D/g, ""); //formatando dinheiro em integer (else err)
+
     const values = [
       data.category_id,
       data.user_id || 1, // fixo até criarmos o cadastro de usuarios

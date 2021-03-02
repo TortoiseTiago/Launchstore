@@ -25,6 +25,7 @@ module.exports = {
       data.quantity,
       data.status,
     ];
-    db.query(query, values);
+
+    return db.query(query, values);
   },
 };

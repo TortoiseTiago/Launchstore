@@ -17,13 +17,13 @@ module.exports = {
 
     const values = [
       data.category_id,
-      1, // fixo até criarmos o cadastro de usuarios
+      data.user_id || 1, // fixo até criarmos o cadastro de usuarios
       data.name,
       data.description,
-      data.old_price,
+      data.old_price || data.price,
       data.price,
       data.quantity,
-      data.status,
+      data.status || 1,
     ];
 
     return db.query(query, values);

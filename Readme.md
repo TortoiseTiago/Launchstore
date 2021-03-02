@@ -28,7 +28,7 @@ Loja virtual desenvolvida durante as aulas do Launchbase com intuito de cadastra
 
 ## SQL
 
-- [database.sql](./Untitled.sql)
+- [database.sql](./database.sql)
 
 ## Dependencias
 

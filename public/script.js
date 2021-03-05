@@ -14,3 +14,17 @@ const Mask = {
   },
   formatEUA() {},
 };
+
+const PhotosUpload = {
+  uploadLimit: 6,
+  handleFileInput(event) {
+    const { files: fileList } = input;
+    const { uploadLimit } = PhotosUpload;
+
+    if (fileList.length > uploadLimit) {
+      alert(`Envie no maximo ${uploadLimit} arquivos`);
+      event.preventDefault();
+      return;
+    }
+  },
+};

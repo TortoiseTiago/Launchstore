@@ -28,7 +28,7 @@ Loja virtual desenvolvida durante as aulas do Launchbase com intuito de cadastra
 
 ## SQL
 
-- [database.sql](./Untitled.sql)
+- [database.sql](./database.sql)
 
 ## Dependencias
 
@@ -51,8 +51,8 @@ Loja virtual desenvolvida durante as aulas do Launchbase com intuito de cadastra
 - [x] Modelando dados do Bando de dados
 - [x] Criando o Layout basico da aplicação
 - [x] Layout do formulario de cadastro
-- [ ] Cadastrando produtos
-- [ ] Atualizando e excluindo produtos
+- [x] Cadastrando produtos
+- [x] Atualizando e excluindo produtos
 
 ### Segundo módulo - Upload de Imagens
 

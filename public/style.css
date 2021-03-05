@@ -53,10 +53,17 @@ body {
 
   cursor: pointer;
 
-  transition: all 0.5s ease;
+  transition: all 0.7s ease;
 }
-.button:hover {
+.button.edit:hover {
   background-color: #2dce18;
+  color: black;
+}
+.button.delete {
+  background-color: rgba(211, 211, 211, 0.719);
+}
+.button.delete:hover {
+  background-color: #e20b0b9d;
   color: black;
 }
 
@@ -184,6 +191,18 @@ form .item select {
 }
 form .item textarea {
   min-height: 150px;
+}
+form .item span {
+  padding: 8px 16px;
+  background-color: #e5e5e5;
+  border-radius: 16px;
+  color: #777;
+  margin-right: 4px;
+  margin-top: 8px;
+  display: inline-block;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
 }
 form .fields {
   margin-bottom: 64px;

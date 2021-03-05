@@ -3,7 +3,7 @@
   <div>
     <select name="category_id">
       {% for category in categories %}
-        <option value="{{category.id}}" {% if product.category_id == category.id %} selected="selected" {% endif %}>
+        <option value="{{category.id}}" {% if products.category_id == category.id %} selected="selected" {% endif %}>
           {{category.name}}
         </option>
       {% endfor %}
@@ -21,7 +21,7 @@
 <div class="item">
   <div>Descrição</div>
   <div>
-    <textarea name="description">{{ product.description }}</textarea>
+    <textarea name="description">{{ products.description }}</textarea>
   </div>
 </div>
 
@@ -30,12 +30,12 @@
 <div class="item">
   <div>Valor do Produto</div>
   <div>
-    <input id="price" type="text" name="price" placeholder="Digite o valor do produto" value="{{ product.price }}" onkeydown="Mask.apply(this, 'formatBRL')">
+    <input id="price" type="text" name="price" placeholder="Digite o valor do produto" value="{{ products.price }}" onkeydown="Mask.apply(this, 'formatBRL')">
 
   </div>
 
   {% if product.old_price %}
-    <input type="hidden" name="old_price" value="{{ product.old_price }}">
+    <input type="hidden" name="old_price" value="{{ products.old_price }}">
   {% endif %}
 
 </div>
@@ -45,16 +45,17 @@
   <div><input type="number" name="quantity" placeholder="Estoque disponivel" value="{{products.quantity}}"></div>
 </div>
 
-{% if product.status %}
+{% if (products.status == '1') 
+  or(products.status == 0) %}
   {# Se ja estiver cadastrado mostra, senão entra como disponivel imediatamente apos cadastro #}
   <div class="item">
     <div>Disponivel</div>
     <div>
       <span>
-        <input type="radio" name="status" value="1" {% if product.status == "1" %} checked="checked" {% endif %}>Disponivel
+        <input type="radio" name="status" value="1" {% if products.status == "1" %} checked="checked" {% endif %}>Sim
       </span>
       <span>
-        <input type="radio" name="status" value="0" {% if product.status == "0" %} checked="checked" {% endif %}>Indisponivel
+        <input type="radio" name="status" value="0" {% if products.status == "0" %} checked="checked" {% endif %}>Não
       </span>
     </div>
   </div>
